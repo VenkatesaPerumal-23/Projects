@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+body,html{
+    height:100%;
+}
+.form-bg-container{
+    background-image:url("https://res.cloudinary.com/dgcyjet4c/image/upload/v1687761179/Screenshot_157_z9k8ws.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height:110vh;
+    
+} 
+.form-head{
+    text-align: center;
+    font-family:cursive;
+    padding:40px;
+}
+.form-head:hover{
+    color:ghostwhite;
+}
+.form-container{
+    margin: 0 auto;
+    background-color: rgb(209, 195, 195);
+    height:650px;
+    width:700px;
+    border-radius:60px;
+}
+.form-button-container{
+    text-align: center;
+    border-width: 0px;
+    margin-top:30px;
+}
+.form-button{
+    color:black;
+    padding:5px;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 8px;
+    background-color: rgba(155, 65, 33, 0.616);
+    width:70px;
+    height:40px;
+    transition: background-color 0.3s ease;
+}
+.form-button:hover {
+    background-color: #2980b9;
+}
+  
+.form-button:active {
+   background-color: #2bcc2b;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+  
+  /* Form container */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    animation: formAnimation 1s ease-in-out;
+}
+  
+@keyframes formAnimation {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+  /* Form input fields */
+form p {
+    margin-bottom: 15px;
+}
+  
+label {
+    display: block;
+    font-weight: bold;
+    margin-top:20px;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+  
+input[type="text"],
+input[type="date"],
+  
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+}
+.form-details{
+    text-align:center;
+    font-family:monospace;
+    background-color: rgb(86, 255, 86);
+    height:30px;
+    border-radius:8px;
+    padding:5px;
+    display:none;
+}
+
+@media screen and (max-width:420px){
+    body{
+        width:700px;
+        height:40%;
+        
+    }
+    .form-head{
+        font-size:20px;
+        text-align: left;
+        margin-left:50px;
+    }
+    .form-container{
+        width:300px;
+        margin-left:50px;
+    }
+    
+}
+

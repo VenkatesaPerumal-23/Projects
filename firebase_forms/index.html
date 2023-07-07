@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Forms</title>
+    <link rel="stylesheet" href="main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="https://res.cloudinary.com/dgcyjet4c/image/upload/v1687761486/257-2575628_microsoft-forms-icon-microsoft-forms-logo-png_yupcjk.png"> 
+</head> 
+<body>
+     <div class="bg-container">
+        <h1 class="form-head">Fill your details below 👇</h1> 
+
+        <div class="form-container">
+            <form id="basicform" action=""> 
+
+                <h2 class="details">Your Details saved successfully!</h2>
+                <p>
+                    <label for="name">Name:</label>
+                    <input type="text" id="username" placeholder="Enter your name" autofocus required> 
+                </p>
+
+                <p>
+                    <label for="age">Age:</label>
+                    <input type="text" id="userage" placeholder="Enter your age" autofocus required> 
+                </p>
+
+                <p>
+                    <label for="name">DOB:</label>
+                    <input type="date" id="userdob" placeholder="Enter your DOB" autofocus required> 
+                </p> 
+
+                <p>
+                    <label for="name">Gender:</label>
+                    <select name="usergender" id="usergender" placeholder="Select you Gender" autofocus required>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Transgender">Transgender</option>
+                        <option value="Others">Others</option>
+                      </select>
+                </p> 
+
+                <p>
+                    <label for="mail">Email:</label>
+                    <input type="text" id="useremail" placeholder="Enter your email_id" autofocus required> 
+                </p> 
+
+                <p>
+                    <label for="number">Mobile Number:</label>
+                    <input type="text" id="usermobno" placeholder="Enter your mob no" autofocus required> 
+                </p>
+
+                
+              <div class="button-container"> 
+                <button class="button">Submit</button>
+            </div> 
+            </form>
+        </div>
+     </div>
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+     <script src="./js_file.js"></script>
+</body>
+</html>

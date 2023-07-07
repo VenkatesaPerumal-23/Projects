@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact Us</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+</head>
+<body>
+    <div class="form-bg-container">
+        <div class="d-flex justify-content-end">
+            <p class="home-para"><a href="index.html">Home</a></p>
+            <p class="home-para"><a href="about.html">About us</a></p>
+            <p class="home-para"><a href="guide.html">Guide</a></p>
+            <p class="home-para"><a href="contact.html">Contact Us</a></p>
+        </div>
+        <h1 class="form-head">Fill your details below 👇</h1> 
+
+        <div class="form-container">
+            <form id="contactform" action=""> 
+
+                <h2 class="form-details">Your Details saved successfully!</h2>
+                
+                    <label for="mail">Email:</label>
+                    <input type="text" id="useremail" placeholder="Enter your email_id" autofocus required> 
+                </p> 
+
+                <p>
+                    <label for="number">Mobile Number:</label>
+                    <input type="text" id="usermobno" placeholder="Enter your mob no" autofocus required> 
+                </p>
+
+                <legend><b>Write us:</b></legend>
+                <textarea id="text" rows="8" cols="75" placeholder=" Write you queries here..."></textarea>
+                
+                
+              <div class="form-button-container"> 
+                <button class="form-button">Submit</button>
+            </div> 
+            </form>
+        </div>
+     </div>
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+     <script src="./details.js"></script>
+</body>
+
+
+</html>
